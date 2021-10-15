@@ -33,4 +33,67 @@ public class Dose extends AbstractVaccineEntity {
 
     @Column(name = "numero", nullable = false, length = 1)
     private int numero;
+
+    public Dose() {
+    }
+
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+
+    public Enfermeiro getEnfermeiro() {
+        return enfermeiro;
+    }
+
+    public void setEnfermeiro(Enfermeiro enfermeiro) {
+        this.enfermeiro = enfermeiro;
+    }
+
+    public Local getLocal() {
+        return local;
+    }
+
+    public void setLocal(Local local) {
+        this.local = local;
+    }
+
+    public TipoVacina getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoVacina tipo) {
+        this.tipo = tipo;
+    }
+
+    public Date getData_vacinacao() {
+        return data_vacinacao;
+    }
+
+    public void setData_vacinacao(Date data_vacinacao) {
+        this.data_vacinacao = data_vacinacao;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    @Override
+    public String toString() {
+        return "Dose{" +
+                "pessoa=" + pessoa +
+                ", enfermeiro=" + enfermeiro +
+                ", local=" + local +
+                ", tipo=" + tipo +
+                ", data_vacinacao=" + data_vacinacao +
+                ", numero=" + numero +
+                '}';
+    }
 }
