@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -23,5 +24,47 @@ public class TipoVacina extends AbstractVaccineEntity {
 
     @Column(name = "intervalo_dose", nullable = false, length = 2)
     private int intervalo_dose;
+
+    public List<Dose> getDose() {
+        return dose;
+    }
+
+    public void setDose(List<Dose> dose) {
+        this.dose = dose;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getQuantidade_dose() {
+        return quantidade_dose;
+    }
+
+    public void setQuantidade_dose(int quantidade_dose) {
+        this.quantidade_dose = quantidade_dose;
+    }
+
+    public int getIntervalo_dose() {
+        return intervalo_dose;
+    }
+
+    public void setIntervalo_dose(int intervalo_dose) {
+        this.intervalo_dose = intervalo_dose;
+    }
+
+    @Override
+    public String toString() {
+        return "TipoVacina{" +
+                "dose=" + dose +
+                ", tipo='" + tipo + '\'' +
+                ", quantidade_dose=" + quantidade_dose +
+                ", intervalo_dose=" + intervalo_dose +
+                '}';
+    }
 }
 
