@@ -42,11 +42,10 @@ CREATE TABLE vaccine_database.vaccine_enfermeiro (
 	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     coren VARCHAR(6) NOT NULL,
     estado_coren VARCHAR(2) NOT NULL,
-    id_pessoa_enfermeiro INT UNSIGNED NOT NULL,
     CONSTRAINT pk_vaccine_enfermeiro PRIMARY KEY (id),
 	CONSTRAINT only_numbers_coren CHECK (coren REGEXP '^[0-9]{6}$'),
 	CONSTRAINT begin_zero_coren CHECK (coren LIKE '0%'),
-	CONSTRAINT fk_pessoa_enfermeiro FOREIGN KEY (id_pessoa_enfermeiro) REFERENCES vaccine_database.vaccine_pessoa(id)
+	CONSTRAINT fk_pessoa_enfermeiro FOREIGN KEY (id) REFERENCES vaccine_database.vaccine_pessoa(id)
 );
 
 
