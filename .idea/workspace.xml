@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d396900-74fe-4f04-97da-13e816a939c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/final_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverse_vaccine_database.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vaccine_tables_database.sql" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/cesar/panthers/next/project/controller/DoseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/src/main/java/cesar/panthers/next/project/service/DoseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/cesar/panthers/next/project/repository/DoseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/cesar/panthers/next/project/repository/DoseRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
       <workItem from="1634061388054" duration="75000" />
       <workItem from="1634152100874" duration="225000" />
       <workItem from="1634152643671" duration="23000" />
+      <workItem from="1634750599170" duration="724000" />
     </task>
     <servers />
   </component>
